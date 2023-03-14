@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    height: 70px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    transition: all 1s;
+    padding: 20px
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hero {
+    background-image: url("img/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-hero {
+    background-color: #000000;
+    color: #cf76ff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background-color: #333;
+    color: #8800ff;
+    transition: 0.5s;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.about li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.pricing {
+    padding: 50px 20px;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 36px;
+}
+
+.pricing li {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.pricing p {
+    font-size: 18px;
+}
+
+.btn-pricing {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.btn-pricing:hover {
+    background-color: #6768ab;
+    color: white;
+    transition: 0.5s;
+}
+    
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.imglogo img {
+        width: 48px;        
+}
+
+#rodape #footerescritas {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+  }
+  
+  .whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  .whatsapp-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+#cabecalho li:hover{
+    background-color: #6768ab;
+    color: white; 
+    border-radius: 20px; 
+}
+
+img {
+max-width: 100%;
+}
+
+
+/* responsivo abaixo */
+    header .menuicon {
+        display: none;
+    }
+
+@media (max-width: 769px) {
+    #rodape #footerescritas {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+display: none;
+    }
+}
+
+@media (max-width: 426px) {
+    header nav {
+        display: none;
+    }
+
+    header .menuicon {
+display: block;
+width: 32px;
+    }
+}
+
+@media (max-width: 376px) {
+ .btn-pricing {
+    display: block;
+ }   
+}
+
+@media (max-width: 321px) {
+    * {
+        font-size: 15px !important;
+    }
+}
